@@ -1,8 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #164a5b;
+  --foreground: #f1f5f9;
+
+  --primary: 133 52% 52%; /* #41C34E */
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 198 90% 56%; /* opcional: #00B4D8 ou outro azul claro */
+  --secondary-foreground: 0 0% 100%;
+
+  --border: 198 33% 94%;
+  --input: 198 33% 94%;
+  --ring: 0 0% 20%;
+
+  --radius: 0.5rem;
 }
 
 @theme inline {
@@ -12,15 +24,37 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 200 40% 25%; /* #164A5B */
+    --foreground: 210 40% 95%; /* #F1F5F9 */
+
+    --primary: 133 52% 52%; /* #41C34E */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 198 90% 56%; /* opcional: #00B4D8 ou outro azul claro */
+    --secondary-foreground: 0 0% 100%;
+
+    --border: 198 33% 94%;
+    --input: 198 33% 94%;
+    --ring: 0 0% 20%;
+
+    --radius: 0.5rem;
+  }
+
+  /* Cores de gráfico opcionais, você pode remover se não usar */
+  :root {
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
   }
 }
 
 body {
-  background: var(--background);
+  background: var(--color-background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
 }
