@@ -1,11 +1,11 @@
 'use client'; 
 
-import { useEffect } from 'react'; 
+import { useEffect, Suspense } from 'react'; // Importe Suspense
 import { useSearchParams, useRouter } from 'next/navigation'; 
 import { toast } from 'sonner'; 
 import { Loader } from 'lucide-react';
 
-export default function LoadingRedirectPage() { 
+function LoadingRedirectContent() { 
   const searchParams = useSearchParams(); 
   const router = useRouter(); 
 
@@ -32,5 +32,13 @@ export default function LoadingRedirectPage() {
 
   return ( 
     <Loader size={50} className='animate-spin'/>
+  );
+}
+
+export default function LoadingRedirectPage() { 
+  return (
+    <Suspense fallback={<Loader size={50} className='animate-spin'/>}> {/* Fallback simples */}
+      <LoadingRedirectContent />
+    </Suspense>
   );
 }
