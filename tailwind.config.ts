@@ -39,7 +39,7 @@ const config: Config = {
           foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
-          DEFAULT: "hsl(0 84.2% 60.2%)",
+          DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(0 0% 98%)",
         },
         chart: {
