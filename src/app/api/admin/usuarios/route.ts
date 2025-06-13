@@ -3,9 +3,6 @@ import { prisma } from "@/lib/prisma";
 import { NextResponse } from "next/server";
 
 export async function GET() {
-    // ATENÇÃO: Nenhuma verificação de autenticação/autorização de ADMIN aqui!
-    // Comportamento provisório até o fim do desenvolvimento
-  
   
     try {
       const users = await prisma.usuario.findMany({
