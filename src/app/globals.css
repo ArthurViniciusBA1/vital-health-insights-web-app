@@ -7,7 +7,7 @@
   --primary: 133 52% 52%; /* #41C34E */
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 198 90% 56%; /* opcional: #00B4D8 ou outro azul claro */
+  --secondary: 198 90% 56%; /* #00B4D8 */
   --secondary-foreground: 0 0% 100%;
 
   --border: 198 33% 94%;
@@ -32,7 +32,7 @@
     --primary: 133 52% 52%; /* #41C34E */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 198 90% 56%; /* opcional: #00B4D8 ou outro azul claro */
+    --secondary: 198 90% 56%; /* #00B4D8 */
     --secondary-foreground: 0 0% 100%;
 
     --border: 198 33% 94%;
